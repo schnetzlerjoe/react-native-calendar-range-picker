@@ -18,22 +18,39 @@ export function getMonths(pastYearRange: number, futureYearRange: number) {
   const currentYear = moment().year();
   const startYear = currentYear - pastYearRange;
   const endYear = currentYear + futureYearRange;
+  var currentMonth = moment().month();
 
   const months: any = [];
   for (let i = 0; i < endYear - startYear; i++) {
     const year = startYear + i;
-    for (let i = 0; i < 12; i++) {
-      let id = "";
-      if (i < 9) {
-        id = `${year}-0${i + 1}`;
-      } else {
-        id = `${year}-${i + 1}`;
+    if(i = 0) {
+      for (let i = currentMonth; i < 12; i++) {
+        let id = "";
+        if (i < 9) {
+          id = `${year}-0${i + 1}`;
+        } else {
+          id = `${year}-${i + 1}`;
+        }
+        months.push({
+          id,
+          year,
+          month: i + 1,
+        });
       }
-      months.push({
-        id,
-        year,
-        month: i + 1,
-      });
+    } else {
+      for (let i = 0; i < 12; i++) {
+        let id = "";
+        if (i < 9) {
+          id = `${year}-0${i + 1}`;
+        } else {
+          id = `${year}-${i + 1}`;
+        }
+        months.push({
+          id,
+          year,
+          month: i + 1,
+        });
+      }
     }
   }
   return months;
