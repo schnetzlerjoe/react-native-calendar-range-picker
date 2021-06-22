@@ -1,7 +1,7 @@
 {
-  "name": "react-native-calendar-range-picker",
-  "version": "1.5.3",
-  "description": "A Simple React Native calendar picker.",
+  "name": "react-native-calendar-vaia",
+  "version": "1.0.2",
+  "description": "Vaia custom calender component.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
@@ -14,14 +14,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huurray/react-native-calendar-range-picker.git"
+    "url": "git+https://github.com/schnetzlerjoe/react-native-calendar-range-vaia.git"
   },
-  "author": "JunHyeok Heo <huurray@gmail.com>",
+  "author": "Joe Schnetzler <schnetzlerjoe@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huurray/react-native-calendar-range-picker/issues"
+    "url": "https://github.com/huurray/react-native-calendar-vaia/issues"
   },
-  "homepage": "https://github.com/huurray/react-native-calendar-range-picker#readme",
+  "homepage": "https://github.com/huurray/react-native-calendar-vaia#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && tsc"
