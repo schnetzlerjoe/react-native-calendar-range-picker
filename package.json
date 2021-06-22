@@ -32,12 +32,16 @@
   },
   "dependencies": {
     "moment": "^2.29.1",
+    "package.json": "^2.0.1",
     "react": "*",
-    "react-native": "*"
+    "react-native": "^0.64.2"
   },
   "devDependencies": {
     "@types/react": "*",
     "@types/react-native": "*",
     "typescript": "4.0.3"
+  },
+  "directories": {
+    "example": "example"
   }
 }
